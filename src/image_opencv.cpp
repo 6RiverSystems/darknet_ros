@@ -1,4 +1,4 @@
-#ifdef OPENCV
+#ifdef OPENCV_FALSE
 
 #include "stdio.h"
 #include "stdlib.h"

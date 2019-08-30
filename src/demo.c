@@ -11,7 +11,8 @@
 
 #define DEMO 1
 
-#ifdef OPENCV
+// Not using opencv for images
+#ifdef OPENCV_FALSE
 
 static char **demo_names;
 static image **demo_alphabet;

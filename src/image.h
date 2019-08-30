@@ -13,7 +13,8 @@
 extern "C" {
 #endif
 
-#ifdef OPENCV
+// Not using opencv for images
+#ifdef OPENCV_FALSE
 void *open_video_stream(const char *f, int c, int w, int h, int fps);
 image get_image_from_stream(void *p);
 image load_image_cv(char *filename, int channels);

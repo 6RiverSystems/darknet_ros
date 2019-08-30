@@ -36,16 +36,16 @@ else()
 endif()
 
 # Find X11
-message ( STATUS "Searching for X11..." )
-find_package ( X11 REQUIRED )
-if ( X11_FOUND )
-  include_directories ( ${X11_INCLUDE_DIR} )
-  link_libraries ( ${X11_LIBRARIES} )
-  message ( STATUS " X11_INCLUDE_DIR: " ${X11_INCLUDE_DIR} )
-  message ( STATUS " X11_LIBRARIES: " ${X11_LIBRARIES} )
-endif ( X11_FOUND )
+# message ( STATUS "Searching for X11..." )
+# find_package ( X11 REQUIRED )
+# if ( X11_FOUND )
+#   include_directories ( ${X11_INCLUDE_DIR} )
+#   link_libraries ( ${X11_LIBRARIES} )
+#   message ( STATUS " X11_INCLUDE_DIR: " ${X11_INCLUDE_DIR} )
+#   message ( STATUS " X11_LIBRARIES: " ${X11_LIBRARIES} )
+# endif ( X11_FOUND )
 
-# Find rquired packeges
+# Find required packeges
 find_package(Boost REQUIRED COMPONENTS thread)
 find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
@@ -122,15 +122,15 @@ if (CUDA_FOUND)
     ${DARKNET_PATH}/src/upsample_layer.c          ${DARKNET_PATH}/src/logistic_layer.c
     ${DARKNET_PATH}/src/l2norm_layer.c            ${DARKNET_PATH}/src/yolo_layer.c
 
-    ${DARKNET_PATH}/examples/art.c                ${DARKNET_PATH}/examples/lsd.c
-    ${DARKNET_PATH}/examples/attention.c          ${DARKNET_PATH}/examples/nightmare.c
-    ${DARKNET_PATH}/examples/captcha.c            ${DARKNET_PATH}/examples/regressor.c
-    ${DARKNET_PATH}/examples/cifar.c              ${DARKNET_PATH}/examples/rnn.c
-    ${DARKNET_PATH}/examples/classifier.c         ${DARKNET_PATH}/examples/segmenter.c
-    ${DARKNET_PATH}/examples/coco.c               ${DARKNET_PATH}/examples/super.c
-    ${DARKNET_PATH}/examples/darknet.c            ${DARKNET_PATH}/examples/tag.c
-    ${DARKNET_PATH}/examples/detector.c           ${DARKNET_PATH}/examples/yolo.c
-    ${DARKNET_PATH}/examples/go.c
+    # ${DARKNET_PATH}/examples/art.c                ${DARKNET_PATH}/examples/lsd.c
+    # ${DARKNET_PATH}/examples/attention.c          ${DARKNET_PATH}/examples/nightmare.c
+    # ${DARKNET_PATH}/examples/captcha.c            ${DARKNET_PATH}/examples/regressor.c
+    # ${DARKNET_PATH}/examples/cifar.c              ${DARKNET_PATH}/examples/rnn.c
+    # ${DARKNET_PATH}/examples/classifier.c         ${DARKNET_PATH}/examples/segmenter.c
+    # ${DARKNET_PATH}/examples/coco.c               ${DARKNET_PATH}/examples/super.c
+    # ${DARKNET_PATH}/examples/darknet.c            ${DARKNET_PATH}/examples/tag.c
+    # ${DARKNET_PATH}/examples/detector.c           ${DARKNET_PATH}/examples/yolo.c
+    # ${DARKNET_PATH}/examples/go.c
 
     ${DARKNET_PATH}/src/activation_kernels.cu     ${DARKNET_PATH}/src/crop_layer_kernels.cu
     ${DARKNET_PATH}/src/avgpool_layer_kernels.cu  ${DARKNET_PATH}/src/deconvolutional_kernels.cu
@@ -202,9 +202,9 @@ else()
     pthread
     stdc++
     ${Boost_LIBRARIES}
-    ${OpenCV_LIBRARIES}
+    # ${OpenCV_LIBRARIES}
     ${catkin_LIBRARIES}
-    ${OpenCV_LIBS}
+    # ${OpenCV_LIBS}
   )
 
   add_executable(${PROJECT_NAME}
