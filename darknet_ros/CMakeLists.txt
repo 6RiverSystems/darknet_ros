@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(darknet_ros)
 
-
 # Set c++11 cmake flags
 set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
 set(CMAKE_C_FLAGS "-Wall -Wno-unused-result -Wno-unknown-pragmas -Wno-unused-variable -Wfatal-errors -fPIC ${CMAKE_C_FLAGS}")
@@ -19,17 +18,21 @@ if (CUDA_FOUND)
   find_package(CUDA REQUIRED)
   message(STATUS "CUDA Version: ${CUDA_VERSION_STRINGS}")
   message(STATUS "CUDA Libararies: ${CUDA_LIBRARIES}")
-  set(
-    CUDA_NVCC_FLAGS
-    ${CUDA_NVCC_FLAGS};
-    -O3
-    -gencode arch=compute_30,code=sm_30
-    -gencode arch=compute_35,code=sm_35
-    -gencode arch=compute_50,code=[sm_50,compute_50]
-    -gencode arch=compute_52,code=[sm_52,compute_52]
-    -gencode arch=compute_61,code=sm_61
-    -gencode arch=compute_62,code=sm_62
-  )
+  set(CUDAHOSTCXX "/usr/local/cuda/bin/nvcc")
+  set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS}; -O3 -gencode arch=compute_53,code=sm_53
+  -gencode arch=compute_62,code=sm_62;")
+  # set(
+  #   CUDA_NVCC_FLAGS
+  #   ${CUDA_NVCC_FLAGS};
+  #   -O3
+  #   -gencode arch=compute_30,code=sm_30
+  #   -gencode arch=compute_35,code=sm_35
+  #   -gencode arch=compute_50,code=[sm_50,compute_50]
+  #   -gencode arch=compute_52,code=[sm_52,compute_52]
+  #   -gencode arch=compute_61,code=sm_61
+  #   -gencode arch=compute_62,code=sm_62
+  # )
+  set(CUDA_HOST_COMPILER "$ENV{CUDAHOSTCXX}" CACHE FILEPATH "Host side compiler used by NVCC")
   add_definitions(-DGPU)
 else()
   list(APPEND LIBRARIES "m")

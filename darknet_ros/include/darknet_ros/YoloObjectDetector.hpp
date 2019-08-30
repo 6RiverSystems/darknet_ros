@@ -57,8 +57,8 @@ extern "C" {
 #include <sys/time.h>
 }
 
-extern "C" void ipl_into_image(IplImage* src, image im);
-extern "C" image ipl_to_image(IplImage* src);
+extern "C" void ipl_into_image(cv::Mat* src, image im);
+extern "C" image ipl_to_image(cv::Mat* src);
 // extern "C" void show_image_cv(image p, const char *name, IplImage *disp);
 
 namespace darknet_ros {
@@ -72,7 +72,7 @@ typedef struct
 
 typedef struct
 {
-  IplImage* image;
+ cv::Mat* image;
   std_msgs::Header header;
 } IplImageWithHeader_;
 
@@ -90,6 +90,7 @@ class YoloObjectDetector
   ~YoloObjectDetector();
 
  private:
+   bool displayDetectedImage_;
   /*!
    * Reads and verifies the ROS parameters.
    * @return true if successful.
@@ -100,6 +101,8 @@ class YoloObjectDetector
    * Initialize the ROS connections.
    */
   void init();
+
+   cv::Mat* getIplImage();
 
   /*!
    * Callback of camera.
@@ -117,11 +120,11 @@ class YoloObjectDetector
    */
   void checkForObjectsActionPreemptCB();
 
+  bool isCheckingForObjects() const;
   /*!
    * Check if a preempt for the check for objects action has been requested.
    * @return false if preempt has been requested or inactive.
    */
-  bool isCheckingForObjects() const;
 
   /*!
    * Publishes the detection image.
@@ -177,7 +180,7 @@ class YoloObjectDetector
   image buffLetter_[3];
   int buffId_[3];
   int buffIndex_ = 0;
-  IplImage * ipl_;
+  cv::Mat * ipl_;
   float fps_ = 0;
   float demoThresh_ = 0;
   float demoHier_ = .5;

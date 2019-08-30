@@ -25,7 +25,7 @@ IplImage *image_to_ipl(image im)
     return disp;
 }
 
-image ipl_to_image(IplImage* src)
+image ipl_to_image(cv::Mat* src)
 {
     int h = src->height;
     int w = src->width;
