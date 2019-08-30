@@ -202,9 +202,9 @@ else()
     pthread
     stdc++
     ${Boost_LIBRARIES}
-    # ${OpenCV_LIBRARIES}
+    ${OpenCV_LIBRARIES}
     ${catkin_LIBRARIES}
-    # ${OpenCV_LIBS}
+    ${OpenCV_LIBS}
   )
 
   add_executable(${PROJECT_NAME}

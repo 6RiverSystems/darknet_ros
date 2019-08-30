@@ -4,7 +4,7 @@
 
 void demo_art(char *cfgfile, char *weightfile, int cam_index)
 {
-#ifdef OPENCV_FALSE
+#ifdef OPENCV
     network *net = load_network(cfgfile, weightfile, 0);
     set_batch_network(net, 1);
 

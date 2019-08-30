@@ -755,7 +755,7 @@ void do_nms_sort(detection *dets, int total, int classes, float thresh);
 matrix make_matrix(int rows, int cols);
 
 // Not using opencv for images
-#ifdef OPENCV_FALSE
+#ifdef OPENCV
 void *open_video_stream(const char *f, int c, int w, int h, int fps);
 image get_image_from_stream(void *p);
 void make_window(char *name, int w, int h, int fullscreen);
