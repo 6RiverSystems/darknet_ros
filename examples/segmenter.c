@@ -169,7 +169,7 @@ void predict_segmenter(char *datafile, char *cfg, char *weights, char *filename)
 
 void demo_segmenter(char *datacfg, char *cfg, char *weights, int cam_index, const char *filename)
 {
-#ifdef OPENCV
+#ifdef OPENCV_FALSE
     printf("Classifier Demo\n");
     network *net = load_network(cfg, weights, 0);
     set_batch_network(net, 1);

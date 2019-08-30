@@ -122,15 +122,15 @@ if (CUDA_FOUND)
     ${DARKNET_PATH}/src/upsample_layer.c          ${DARKNET_PATH}/src/logistic_layer.c
     ${DARKNET_PATH}/src/l2norm_layer.c            ${DARKNET_PATH}/src/yolo_layer.c
 
-    # ${DARKNET_PATH}/examples/art.c                ${DARKNET_PATH}/examples/lsd.c
-    # ${DARKNET_PATH}/examples/attention.c          ${DARKNET_PATH}/examples/nightmare.c
-    # ${DARKNET_PATH}/examples/captcha.c            ${DARKNET_PATH}/examples/regressor.c
-    # ${DARKNET_PATH}/examples/cifar.c              ${DARKNET_PATH}/examples/rnn.c
-    # ${DARKNET_PATH}/examples/classifier.c         ${DARKNET_PATH}/examples/segmenter.c
-    # ${DARKNET_PATH}/examples/coco.c               ${DARKNET_PATH}/examples/super.c
-    # ${DARKNET_PATH}/examples/darknet.c            ${DARKNET_PATH}/examples/tag.c
-    # ${DARKNET_PATH}/examples/detector.c           ${DARKNET_PATH}/examples/yolo.c
-    # ${DARKNET_PATH}/examples/go.c
+    ${DARKNET_PATH}/examples/art.c                ${DARKNET_PATH}/examples/lsd.c
+    ${DARKNET_PATH}/examples/attention.c          ${DARKNET_PATH}/examples/nightmare.c
+    ${DARKNET_PATH}/examples/captcha.c            ${DARKNET_PATH}/examples/regressor.c
+    ${DARKNET_PATH}/examples/cifar.c              ${DARKNET_PATH}/examples/rnn.c
+    ${DARKNET_PATH}/examples/classifier.c         ${DARKNET_PATH}/examples/segmenter.c
+    ${DARKNET_PATH}/examples/coco.c               ${DARKNET_PATH}/examples/super.c
+    ${DARKNET_PATH}/examples/darknet.c            ${DARKNET_PATH}/examples/tag.c
+    ${DARKNET_PATH}/examples/detector.c           ${DARKNET_PATH}/examples/yolo.c
+    ${DARKNET_PATH}/examples/go.c
 
     ${DARKNET_PATH}/src/activation_kernels.cu     ${DARKNET_PATH}/src/crop_layer_kernels.cu
     ${DARKNET_PATH}/src/avgpool_layer_kernels.cu  ${DARKNET_PATH}/src/deconvolutional_kernels.cu

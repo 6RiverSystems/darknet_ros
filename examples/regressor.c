@@ -149,7 +149,7 @@ void predict_regressor(char *cfgfile, char *weightfile, char *filename)
 
 void demo_regressor(char *datacfg, char *cfgfile, char *weightfile, int cam_index, const char *filename)
 {
-#ifdef OPENCV
+#ifdef OPENCV_FALSE
     printf("Regressor Demo\n");
     network *net = load_network(cfgfile, weightfile, 0);
     set_batch_network(net, 1);

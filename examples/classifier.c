@@ -796,7 +796,7 @@ void file_output_classifier(char *datacfg, char *filename, char *weightfile, cha
 
 void threat_classifier(char *datacfg, char *cfgfile, char *weightfile, int cam_index, const char *filename)
 {
-#ifdef OPENCV
+#ifdef OPENCV_FALSE
     float threat = 0;
     float roll = .2;
 
@@ -919,7 +919,7 @@ void threat_classifier(char *datacfg, char *cfgfile, char *weightfile, int cam_i
 
 void gun_classifier(char *datacfg, char *cfgfile, char *weightfile, int cam_index, const char *filename)
 {
-#ifdef OPENCV
+#ifdef OPENCV_FALSE
     int bad_cats[] = {218, 539, 540, 1213, 1501, 1742, 1911, 2415, 4348, 19223, 368, 369, 370, 1133, 1200, 1306, 2122, 2301, 2537, 2823, 3179, 3596, 3639, 4489, 5107, 5140, 5289, 6240, 6631, 6762, 7048, 7171, 7969, 7984, 7989, 8824, 8927, 9915, 10270, 10448, 13401, 15205, 18358, 18894, 18895, 19249, 19697};
 
     printf("Classifier Demo\n");
@@ -985,7 +985,7 @@ void gun_classifier(char *datacfg, char *cfgfile, char *weightfile, int cam_inde
 
 void demo_classifier(char *datacfg, char *cfgfile, char *weightfile, int cam_index, const char *filename)
 {
-#ifdef OPENCV
+#ifdef OPENCV_FALSE
     char *base = basecfg(cfgfile);
     image **alphabet = load_alphabet();
     printf("Classifier Demo\n");
