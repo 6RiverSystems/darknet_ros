@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 2.8.12)
-project(darknet_ros)
+project(darknet_ros LANGUAGES C CXX CUDA)
 
 # Set c++11 cmake flags
 set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
@@ -23,7 +23,6 @@ if (CUDA_FOUND)
   set(
     CUDA_NVCC_FLAGS
     ${CUDA_NVCC_FLAGS};
-    -O3
     -gencode arch=compute_30,code=sm_30
     -gencode arch=compute_35,code=sm_35
     -gencode arch=compute_50,code=[sm_50,compute_50]
@@ -63,7 +62,7 @@ find_package(catkin REQUIRED
 
 # Enable OPENCV in darknet
 add_definitions(-DOPENCV)
-add_definitions(-O4 -g)
+add_definitions(-g)
 
 catkin_package(
   INCLUDE_DIRS
@@ -96,7 +95,7 @@ if (CUDA_FOUND)
     /usr/local/cuda/lib64
   )
 
-  cuda_add_library(${PROJECT_NAME}_lib
+  add_library(${PROJECT_NAME}_lib
     src/YoloObjectDetector.cpp
     src/image_interface.c
 
