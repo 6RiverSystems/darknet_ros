@@ -13,6 +13,8 @@ message(STATUS "Darknet path dir = ${DARKNET_PATH}")
 add_definitions(-DDARKNET_FILE_PATH="${DARKNET_PATH}")
 
 # Find CUDA
+set(CUDA_HOST_COMPILER "/usr/bin/g++")
+set(CMAKE_CUDA_HOST_COMPILER "/usr/bin/g++")
 find_package(CUDA QUIET)
 if (CUDA_FOUND)
   find_package(CUDA REQUIRED)
