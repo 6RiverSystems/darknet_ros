@@ -18,9 +18,9 @@ if (CUDA_FOUND)
   find_package(CUDA REQUIRED)
   message(STATUS "CUDA Version: ${CUDA_VERSION_STRINGS}")
   message(STATUS "CUDA Libararies: ${CUDA_LIBRARIES}")
-  set(CUDAHOSTCXX "/usr/local/cuda/bin/nvcc")
-  set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS}; -O3 -gencode arch=compute_53,code=sm_53
-  -gencode arch=compute_62,code=sm_62;")
+  # set(CUDAHOSTCXX "/usr/local/cuda/bin/nvcc")
+  # set(CUDA_NVCC_FLAGS "${CUDA_NVCC_FLAGS}; -O3 -gencode arch=compute_53,code=sm_53
+  # -gencode arch=compute_62,code=sm_62;")
   # set(
   #   CUDA_NVCC_FLAGS
   #   ${CUDA_NVCC_FLAGS};
