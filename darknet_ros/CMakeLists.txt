@@ -62,7 +62,7 @@ find_package(catkin REQUIRED
 
 # Enable OPENCV in darknet
 add_definitions(-DOPENCV)
-add_definitions(-O4 -g)
+add_definitions(-g)
 
 catkin_package(
   INCLUDE_DIRS
