@@ -1,9 +1,10 @@
 cmake_minimum_required(VERSION 2.8.12)
 project(darknet_ros LANGUAGES C CXX CUDA)
 
+
 # Set c++11 cmake flags
-set(CMAKE_CXX_FLAGS "-std=c++11 ${CMAKE_CXX_FLAGS}")
-set(CMAKE_C_FLAGS "-Wall -Wno-unused-result -Wno-unknown-pragmas -Wno-unused-variable -Wfatal-errors -fPIC ${CMAKE_C_FLAGS}")
+set(CMAKE_CXX_FLAGS "-std=c++11 -O4 ${CMAKE_CXX_FLAGS}")
+set(CMAKE_C_FLAGS "-O4 -Wall -Wno-unused-result -Wno-unknown-pragmas -Wno-unused-variable -Wfatal-errors -fPIC ${CMAKE_C_FLAGS}")
 
 # Define path of darknet folder here.
 find_path(DARKNET_PATH
