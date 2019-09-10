@@ -1,7 +1,7 @@
 subscribers:
 
   camera_reading:
-    topic: /camera/rgb/image_raw
+    topic: /obstacles/downward/depth_image
     queue_size: 1
 
 actions:
