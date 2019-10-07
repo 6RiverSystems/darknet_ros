@@ -1,0 +1,7 @@
+<launch>
+  <group ns="darknet">
+    <include file="darknet_ros/darknet_ros_gdb.launch">
+    <include file="darknet_ros/darknet_ros.launch">
+    <include file="darknet_ros/yolo_v3.launch">
+  </group>
+</launch>
