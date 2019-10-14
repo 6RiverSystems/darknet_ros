@@ -261,6 +261,18 @@ if (NOT EXISTS "${FILE}")
   execute_process(COMMAND wget http://pjreddie.com/media/files/yolov3.weights -P ${PATH})
 endif()
 
+# Download yolo-obj_final.weights
+set(PATH "${CMAKE_CURRENT_SOURCE_DIR}/yolo_network_config/weights")
+set(FILE "${PATH}/yolov2-tiny.weights")
+message(STATUS "Checking and downloading yolo-obj_final.weights...")
+
+
+# Download yolo-obj_config
+set(PATH "${CMAKE_CURRENT_SOURCE_DIR}/yolo_network_config/cfg")
+set(FILE "${PATH}/yolo-obj.cfg")
+message(STATUS "Checking and downloading yolo-obj config...")
+
+
 #############
 ## Testing ##
 #############
