@@ -244,12 +244,12 @@ install(DIRECTORY launch/
     DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/launch
 )
 
-install(DIRECTORY yolo_network_config/weight/
-   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/yolo_netowrk_config/weight
+install(DIRECTORY yolo_network_config/weights/
+   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/yolo_network_config/weights
 ) 
 
 install(DIRECTORY yolo_network_config/cfg/
-   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/yolo_netowrk_config/cfg
+   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/yolo_network_config/cfg
 )
 
 # Download yolov2-tiny.weights
