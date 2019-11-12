@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC   -shared -Wl,-soname,libpolyclipping.so -o /home/kalyco/mfp_workspace/devel/.private/polyclipping/lib/libpolyclipping.so CMakeFiles/polyclipping.dir/src/clipper.cpp.o 

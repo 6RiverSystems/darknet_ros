@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+  *
+  * (c) Copyright 2015-2018 6 River Systems, all rights reserved.
+  *
+  * This is proprietary software, unauthorized distribution is not permitted.
+  *
+-->
+
+<package format="2">
+    <name>srsbot_kiosk</name>
+    <version>1.0.0</version>
+    <description>Package for kiosk and terminal specific things</description>
+
+    <author email="cpowers@6river.com">Caitlin Powers</author>
+    <maintainer email="cpowers@6river.com">Caitlin Powers</maintainer>
+
+    <license>Proprietary</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+</package>

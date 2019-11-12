@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: srsbot_chuck_description
+Description: Description of srsbot_chuck_description
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/kalyco/mfp_workspace/install/lib 
+Requires: 

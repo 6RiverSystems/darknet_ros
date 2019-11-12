@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: pcl_conversions
+Description: Description of pcl_conversions
+Version: 0.2.1
+Cflags: -I/home/kalyco/mfp_workspace/install/include -I/usr/include/eigen3 -I/usr/include -I/usr/include/pcl-1.8
+Libs: -L/home/kalyco/mfp_workspace/install/lib 
+Requires: pcl_msgs roscpp sensor_msgs std_msgs

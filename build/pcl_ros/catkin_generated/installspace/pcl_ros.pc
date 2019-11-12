@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: pcl_ros
+Description: Description of pcl_ros
+Version: 1.4.1
+Cflags: -I/home/kalyco/mfp_workspace/install/include -I/usr/include
+Libs: -L/home/kalyco/mfp_workspace/install/lib -lpcl_ros_filters -lpcl_ros_io -lpcl_ros_tf /usr/lib/x86_64-linux-gnu/libboost_system.so /usr/lib/x86_64-linux-gnu/libboost_filesystem.so /usr/lib/x86_64-linux-gnu/libboost_thread.so /usr/lib/x86_64-linux-gnu/libboost_date_time.so /usr/lib/x86_64-linux-gnu/libboost_iostreams.so /usr/lib/x86_64-linux-gnu/libboost_serialization.so /usr/lib/x86_64-linux-gnu/libboost_chrono.so /usr/lib/x86_64-linux-gnu/libboost_atomic.so /usr/lib/x86_64-linux-gnu/libboost_regex.so
+Requires: dynamic_reconfigure message_filters nodelet pcl_conversions pcl_msgs rosbag roscpp sensor_msgs std_msgs tf

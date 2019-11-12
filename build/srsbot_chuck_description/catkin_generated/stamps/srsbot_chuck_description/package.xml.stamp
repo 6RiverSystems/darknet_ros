@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+  *
+  * (c) Copyright 2015-2018 6 River Systems, all rights reserved.
+  *
+  * This is proprietary software, unauthorized distribution is not permitted.
+  *
+-->
+
+<package format="2">
+    <name>srsbot_chuck_description</name>
+    <version>1.0.0</version>
+    <description>Robot description package: Chuck</description>
+
+    <author email="dan@6river.com">Dan Winkler</author>
+    <author email="fsantini@6river.com">Fabrizio Santini</author>
+    <maintainer email="dan@6river.com">Dan Winkler</maintainer>
+    <maintainer email="fsantini@6river.com">Fabrizio Santini</maintainer>
+
+    <license>Proprietary</license>
+
+    <buildtool_depend>catkin</buildtool_depend>
+
+    <depend>sick_tim</depend>
+    <depend>xacro</depend>
+    <depend>urdf</depend>
+
+</package>

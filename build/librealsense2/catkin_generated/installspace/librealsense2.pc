@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: librealsense2
+Description: Description of librealsense2
+Version: 2.16.1
+Cflags: -I/home/kalyco/mfp_workspace/install/include
+Libs: -L/home/kalyco/mfp_workspace/install/lib -lrealsense2
+Requires: 

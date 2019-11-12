@@ -1,0 +1,28 @@
+<package format="2">
+  <name>polar_scan_matcher</name>
+  <version>0.3.2</version>
+  <description>
+    <p>
+    A wrapper around Polar Scan Matcher by Albert Diosi and Lindsay Kleeman, used for laser scan registration.
+    </p>
+  </description>
+  <author>Ivan Dryanovski</author>
+  <maintainer email="ccnyroboticslab@gmail.com">Ivan Dryanovski</maintainer>
+  <maintainer email="cjaramillo@gc.cuny.edu">Carlos</maintainer>
+  <license>GPL</license>
+
+  <url>http://ros.org/wiki/polar_scan_matcher</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>tf</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <exec_depend>tf</exec_depend>
+  <exec_depend>roscpp</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+</package>
+
+

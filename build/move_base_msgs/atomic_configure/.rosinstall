@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/kalyco/mfp_workspace/devel/.private/move_base_msgs/setup.sh

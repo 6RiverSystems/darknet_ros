@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+b3ff6aba448078141067cc392660267d /home/kalyco/mfp_workspace/devel/.private/image_rotate/include/image_rotate/ImageRotateConfig.h
+22b1ac31a752cbdd550093f0bb2513ca CMakeFiles/clean_test_results
+411217e46b16e9b71839df490ca4844a CMakeFiles/image_rotate_gencfg

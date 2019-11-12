@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: move_base_msgs
+Description: Description of move_base_msgs
+Version: 1.12.13
+Cflags: -I/home/kalyco/mfp_workspace/install/include
+Libs: -L/home/kalyco/mfp_workspace/install/lib 
+Requires: 

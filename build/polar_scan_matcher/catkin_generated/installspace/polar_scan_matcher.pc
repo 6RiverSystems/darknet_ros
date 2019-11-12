@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: polar_scan_matcher
+Description: Description of polar_scan_matcher
+Version: 0.3.2
+Cflags: -I/home/kalyco/mfp_workspace/install/include
+Libs: -L/home/kalyco/mfp_workspace/install/lib -lpolar_scan_matcher
+Requires: 

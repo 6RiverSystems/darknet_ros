@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: mbf_msgs
+Description: Description of mbf_msgs
+Version: 0.2.4
+Cflags: -I/home/kalyco/mfp_workspace/install/include
+Libs: -L/home/kalyco/mfp_workspace/install/lib 
+Requires: actionlib_msgs geometry_msgs message_runtime nav_msgs std_msgs

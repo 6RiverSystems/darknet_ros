@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -std=c++11 -pthread   -shared -Wl,-soname,libimage_loader.so -o /home/kalyco/mfp_workspace/devel/.private/map_server/lib/libimage_loader.so CMakeFiles/image_loader.dir/src/image_loader.cpp.o -lSDL -lSDL_image -lboost_system 

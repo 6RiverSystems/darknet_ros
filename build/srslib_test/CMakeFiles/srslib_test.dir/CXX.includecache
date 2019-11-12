@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kalyco/mfp_workspace/src/srslib_test/include/srslib_test/utils/MemoryWatch.hpp
+malloc.h
+-
+unistd.h
+-
+
+/home/kalyco/mfp_workspace/src/srslib_test/src/utils/MemoryWatch.cpp
+srslib_test/utils/MemoryWatch.hpp
+-
+

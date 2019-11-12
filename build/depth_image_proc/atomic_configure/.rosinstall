@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/kalyco/mfp_workspace/devel/.private/depth_image_proc/setup.sh

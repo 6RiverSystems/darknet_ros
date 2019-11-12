@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: srslib_test
+Description: Description of srslib_test
+Version: 1.0.0
+Cflags: -I/home/kalyco/mfp_workspace/install/include
+Libs: -L/home/kalyco/mfp_workspace/install/lib -lsrslib_test
+Requires: 

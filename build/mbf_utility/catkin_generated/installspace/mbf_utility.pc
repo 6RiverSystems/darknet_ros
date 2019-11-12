@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: mbf_utility
+Description: Description of mbf_utility
+Version: 0.2.4
+Cflags: -I/home/kalyco/mfp_workspace/install/include
+Libs: -L/home/kalyco/mfp_workspace/install/lib -lmbf_utility
+Requires: geometry_msgs roscpp tf tf2 tf2_ros tf2_geometry_msgs

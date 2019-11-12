@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: amcl
+Description: Description of amcl
+Version: 1.12.13
+Cflags: -I/home/kalyco/mfp_workspace/install/include
+Libs: -L/home/kalyco/mfp_workspace/install/lib -lamcl_sensors -lamcl_map -lamcl_pf
+Requires: rosbag roscpp dynamic_reconfigure tf

@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: image_transport
+Description: Description of image_transport
+Version: 1.11.13
+Cflags: -I/home/kalyco/mfp_workspace/install/include
+Libs: -L/home/kalyco/mfp_workspace/install/lib -limage_transport
+Requires: message_filters pluginlib rosconsole roscpp roslib sensor_msgs

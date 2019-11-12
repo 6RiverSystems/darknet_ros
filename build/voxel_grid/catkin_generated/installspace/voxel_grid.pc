@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: voxel_grid
+Description: Description of voxel_grid
+Version: 1.12.13
+Cflags: -I/home/kalyco/mfp_workspace/install/include
+Libs: -L/home/kalyco/mfp_workspace/install/lib -lvoxel_grid
+Requires: roscpp

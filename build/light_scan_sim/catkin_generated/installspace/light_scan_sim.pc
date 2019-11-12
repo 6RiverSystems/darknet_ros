@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: light_scan_sim
+Description: Description of light_scan_sim
+Version: 0.1.0
+Cflags: -I/home/kalyco/mfp_workspace/install/include
+Libs: -L/home/kalyco/mfp_workspace/install/lib 
+Requires: roscpp rospy sensor_msgs std_msgs tf nav_msgs message_runtime

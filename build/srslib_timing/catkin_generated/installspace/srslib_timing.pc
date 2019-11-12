@@ -1,0 +1,8 @@
+prefix=/home/kalyco/mfp_workspace/install
+
+Name: srslib_timing
+Description: Description of srslib_timing
+Version: 0.0.0
+Cflags: -I/home/kalyco/mfp_workspace/install/include
+Libs: -L/home/kalyco/mfp_workspace/install/lib 
+Requires: roscpp rospy message_runtime std_msgs
